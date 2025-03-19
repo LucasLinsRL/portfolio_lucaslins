@@ -171,4 +171,9 @@ p {
     width: 40px;
     height: 40px;
   }
+  .card {
+    padding: 20px;
+    margin: 20px;
+  }
+}
 }
