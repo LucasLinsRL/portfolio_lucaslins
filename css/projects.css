@@ -226,3 +226,16 @@ h1 {
     flex: 1;
 }
 
+/*Configuração para aparelhos pequenos*/
+@media (max-width: 768px) {
+    .pro-card {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .pro-card img {
+        width: 200px;
+        height: 200px;
+        margin-bottom: 20px;
+    }
+}
