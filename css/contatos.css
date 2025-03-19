@@ -129,20 +129,46 @@ p {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* Adicionei uma margem para as imagens em dispositivos pequenos */
-@media (max-width: 600px) {
-    .social-links {
-        flex-wrap: wrap;
-        gap: 15px;
-    }
+.card {
+  background: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 50px;
+  margin: 100px;
+  text-align: center;
 }
 
-.card {
-    background: #ffffff;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 100px;
-    margin: 100px;
-    text-align: center;
+/* Configurações para aparelhos pequenos(móveis) */
+@media (max-width: 768px) {
+  .side-menu {
+    top: 5px;
+    left: 5px;
+  }
+
+  .side-menu:hover {
+    width: 100px;
+    height: 100px;
+  }
+
+  .menu-content {
+    padding: 5px 0 0 5px;
+  }
+
+  .menu-content a {
+    font-size: 0.8rem;
+  }
+
+  .submenu {
+    left: 100px;
+  }
+
+  .social-links {
+    flex-wrap: wrap;
+  }
+
+  .social-links a img {
+    width: 40px;
+    height: 40px;
+  }
 }
