@@ -1,0 +1,208 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #064a73;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin-left: 50px; 
+    line-height: 1.6;
+  }
+  
+/* Container do menu lateral */
+.side-menu {
+  width: 50px;
+  height: 50px;
+  background-color: #e2e0e7;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: height 0.3s ease-in-out, width 0.3s ease-in-out;
+  z-index: 1000;
+  overflow: hidden; /* Esconde o menu inicialmente */
+}
+
+.side-menu:hover {
+  width: 200px;
+  height: 133px; /* Define a altura ao passar o mouse */
+}
+
+/* Ícone do menu */
+.menu-icon {
+  font-size: 1.5rem;
+  color: #02649c;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.menu-icon:hover {
+  color: #dcdcdc;
+}
+
+/* Conteúdo do menu (oculto por padrão) */
+.menu-content {
+  list-style: none;
+  margin: 0;
+  padding: 10px 0 0 10px;
+  display: none; /* Inicialmente escondido */
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Exibe o conteúdo do menu ao passar o mouse */
+.side-menu:hover .menu-content {
+  display: flex;
+}
+
+.menu-content li {
+  position: relative;
+}
+
+.menu-content a {
+  text-decoration: none;
+  color: #02649c;
+  font-size: 0.9rem;
+  display: block;
+  transition: color 0.3s ease;
+}
+
+.menu-content a:hover {
+  color: #0b3147;
+}
+
+/* Submenu inicialmente escondido */
+.submenu {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 150px;
+  background-color: #02649c;
+  border-radius: 4px;
+  padding: 10px;
+  z-index: 1001;
+}
+
+.submenu li {
+  margin: 5px 0;
+}
+
+.submenu a {
+  color: #02649c;
+}
+
+.submenu a:hover {
+  color: #dcdcdc;
+}
+
+/* Mostrar o submenu ao passar o mouse */
+.dropdown:hover .submenu {
+  display: block;
+}
+
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1200px;
+  }
+  
+  .card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 350px;
+    text-align: center;
+  }
+  
+  .profile-pic {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+  }
+  
+  .name {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  
+  .profession {
+    font-size: 18px;
+    color: #666666;
+    margin-bottom: 20px;
+  }
+  
+  .skills {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+  }
+  
+  .skills li {
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 5px;
+    padding: 5px 10px;
+    font-size: 14px;
+  }
+  
+  .email-btn {
+    background-color: #064a73;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 15px;
+  }
+  
+  .email-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .social-links a {
+    text-decoration: none;
+    color: #064a73;
+    margin: 0 10px;
+    font-size: 16px;
+  }
+  
+  .social-links a:hover {
+    text-decoration: underline;
+  }
+  
+  .text-section {
+    flex: 1;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  
+  .text-section h3 {
+    margin-top: 20px;
+  }
+  
+  .text-section ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin: 10px 0;
+  }
+  
+  .text-section ul li {
+    margin-bottom: 5px;
+  }
+  
+  
